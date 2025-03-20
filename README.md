@@ -22,7 +22,7 @@
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
 ## Prisma Setup
-datasource db {  
+```datasource db {  
     provider  = "postgresql"  
     url  	    = env("DATABASE_URL")  
     // uncomment next line if you use Prisma <5.10  
