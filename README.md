@@ -21,6 +21,18 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+## Prisma Setup
+datasource db {
+  provider  = "postgresql"
+  url  	    = env("DATABASE_URL")
+  // uncomment next line if you use Prisma <5.10
+  // directUrl = env("DATABASE_URL_UNPOOLED")
+}
+=
+
+## API KEY
+DATABASE_URL="postgresql://neondb_owner:npg_f8ajsp5DQvCL@ep-cold-art-a1gc4eue-pooler.ap-southeast-1.aws.neon.tech/han-exampledb?sslmode=require"
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
